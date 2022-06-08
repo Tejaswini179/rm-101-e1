@@ -9,9 +9,11 @@ const TaskHeader = ({ tasks }) => {
 
 
   return (
+   
     <div data-testid="task-header" className={styles.taskHeader}>
-      <b data-testid="header-remaining-task">{notDoneTask}  </b>
-      <b data-testid="header-total-task">{total}</b>
+     <h1>Todo List</h1>
+      <b data-testid="header-remaining-task">you have{notDoneTask}  </b>of
+      <b data-testid="header-total-task">{total}tasks remaining</b> 
     </div>
   );
 };
